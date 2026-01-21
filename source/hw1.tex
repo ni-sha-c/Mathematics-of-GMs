@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage[tagged, highstructure]{accessibility}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{scribe}
+\usepackage{listings}
+\usepackage{natbib,verbatim}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=magenta,
+    pdftitle={Course Syllabus},
+    pdfauthor={Nisha Chandramoorthy},
+    pdflang={en-US}
+}
+
+%\Scribe{Your Name}
+\title{Syllabus-37780}
+\Lecturer{Nisha Chandramoorthy (nishac@uchicago.edu)}
+\LectureNumber{\begin{large} Mathematics of Generative Models \end{large}}
+\LectureDate{}
+\LectureTitle{\begin{large}Homework 1\end{large}}
+
+\lstset{style=mystyle}
+
+\begin{document}
+\MakeScribeTop
+
+In this homework, we will explore probability flows in 2D. 
+\begin{enumerate}
+\item Consider the ODE 
+\begin{equation}
+    \label{eq:flow}
+    \dfrac{dx}{dt} = v(x,t) \quad t \in [0,1]. 
+\end{equation}
+The solution to the ODE above at time $t$ starting with the initial condition $x \in \mathbb{R}^2$ is given by 
+$\varphi^t(x) \in \mathbb{R}^2.$ The function $(t,x) \to \varphi^t(x)$ is also called the flow of the vector field $v.$
+Now, we will consider an ensemble of initial conditions distributed according to a probability density
+ $\rho_0$. Derive the continuity equation, 
+\begin{equation}
+    \label{eq:continuity}
+    \dfrac{\partial \rho_t}{\partial t} = - \mathrm{div}(\rho_t\: v(\cdot,t)),
+\end{equation}
+which gives us the probability density, $\rho_t,$ of $\varphi^t(x)$ when the $x$ is a sample from the density $\rho_0.$
+(5 points)
+\item Using the previous part or otherwise, derive the ODE for the evolution of the 
+log density along a sample path,
+\begin{equation}
+    \label{eq:logprobability}
+    \dfrac{d\log(\rho_t(\varphi^t(x)))}{dt} =  - \mathrm{div}(v(\cdot,t)) (\varphi^t(x)).
+\end{equation}
+(5 points)
+\item Let $\rho_1$ be a bimodal Gaussian distribution, $\rho_1(x) = w_1 \: (2\pi)\: |\Sigma_1|^{-1/2}\: e^{-(x-\mu_1)^\top \Sigma_1^{-1} (x-\mu_1)} + 
+w_2 \: (2\pi)\: |\Sigma_2|^{-1/2}\: e^{-(x-\mu_2)^\top \Sigma_1^{-1} (x-\mu_2)},$ with the following values:
+\begin{equation}
+w_1 = 0.2, \: w_2 = 0.8, \: \mu_1 = \begin{bmatrix} -2 \\ -2 \end{bmatrix}, \: \mu_2 = \begin{bmatrix} 2 \\ 2 \end{bmatrix}, \: \Sigma_1 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \: \Sigma_2 = \begin{bmatrix} 2 & 1 \\ 1 & 2\end{bmatrix}
+\end{equation}
+How will you generate samples from this density? You can write a pseudocode or explain the logic. (5 points)
+\item Let the samples generated from the previous part be $x_1,\cdots, x_m.$ 
+For any sample $x_i \sim \rho_1$, set $\log \rho_1(x_i) = 0.$ Initialize a neural network, $v,$ that takes in $x,t$ and approximates the vector $v(x,t) \in \mathbb{R}^2$ in \eqref{eq:flow} such that 
+$\rho_0$ is a standard normal in 2D. We will do this by maximizing the log likelihood of the samples. Although in this case, we have the target density in closed form, we generally do not.
+So, using the target samples $x_1, \cdots, x_m$, we will follow this procedure to estimate the log likelihood of the samples:
+\begin{itemize}
+    \item Time integrate the flow, \eqref{eq:flow}, backward in time, using the final condition, $\varphi^1(x) = x_i, i \in [m].$
+    \item Set $\log \rho_t(x_1) = 0$ and solve the log probability equation \eqref{eq:logprobability} backward in time. The solution at time $t= 0$ is given by $\log\rho_0(x_0),$ where $\varphi^1(x_0) = x_1.$ You can evaluate $\log\rho_0$ anywhere since $\rho_0$ is a Gaussian distribution. 
+    \item 
+\end{itemize}
+\end{enumerate}
+
+\end{document}
