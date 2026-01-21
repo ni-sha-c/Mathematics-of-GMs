@@ -1,5 +1,5 @@
-<p><span style="font-size: 18pt;">Tentative lecture schedule</span></p>
-<p>&nbsp;</p>
+<p><span style="font-size: 18pt;">Tentative schedule</span></p>
+<p><span style="font-size: 18pt;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="syllabus.pdf" href="/courses/69405/files/14584815?wrap=1" target="_blank" rel="noopener">Syllabus</a></span></p>
 <table style="border-collapse: collapse; width: 100%; height: 1242px;" border="1">
     <tbody>
         <tr style="height: 41px;">
@@ -9,22 +9,22 @@
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/06</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Introduction to generative modeling</span></td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;">Generative models and examples of applications: conditional generation, missing data imputation etc.&nbsp;</td>
+            <td style="width: 33.2897%; height: 77px;">Murphy overview chapter</td>
         </tr>
         <tr style="height: 113px;">
             <td style="width: 33.2897%; height: 113px;"><span style="font-size: 18pt;">01/08</span></td>
-            <td style="width: 33.2897%; height: 113px;"><span style="font-size: 18pt;">Probabilistic modeling overview: inference and information&nbsp;</span></td>
-            <td style="width: 33.2897%; height: 113px;"></td>
+            <td style="width: 33.2897%; height: 113px;">Why generative models are hard to evaluate, discriminative vs generative models, learning theory result from Ng and Jordan 2001</td>
+            <td style="width: 33.2897%; height: 113px;"><a class="inline_disabled" title="Link" href="https://proceedings.neurips.cc/paper/2001/hash/7b7a53e239400a13bd6be6c91c4f6c4e-Abstract.html" target="_blank" rel="noopener">Ng and Jordan, 2001</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/13</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Probability flow ODEs, Neural ODEs</span></td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;">Deriving change of variables for densities, introducing dynamical generative models via probability flows</td>
+            <td style="width: 33.2897%; height: 77px;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="ProbabilityFlows.pdf" href="/courses/69405/files/14664463?wrap=1" target="_blank" rel="noopener">Notes on deriving probability flows</a></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/15</span></td>
-            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">Transport maps</span></td>
+            <td style="width: 33.2897%; height: 41px;">Change of variables formula for composition of maps, continuous normalizing flows introduction</td>
             <td style="width: 33.2897%; height: 41px;"></td>
         </tr>
         <tr style="height: 41px;">
