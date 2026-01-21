@@ -24,8 +24,8 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/15</span></td>
-            <td style="width: 33.2897%; height: 41px;">Change of variables formula for composition of maps, continuous normalizing flows introduction</td>
-            <td style="width: 33.2897%; height: 41px;"></td>
+            <td style="width: 33.2897%; height: 41px;">Change of variables formula for composition of maps, continuous normalizing flows introduction, Manifold hypothesis, discussion of probability distribution vs density</td>
+            <td style="width: 33.2897%; height: 41px;"><a class="inline_disabled" title="Link" href="https://proceedings.neurips.cc/paper_files/paper/2010/hash/8a1e808b55fde9455cb3d8857ed88389-Abstract.html" target="_blank" rel="noopener">Narayan and Mitter 2010 on testing the manifold hypothesis</a></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/20</span></td>
