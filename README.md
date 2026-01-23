@@ -29,13 +29,13 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/20</span></td>
-            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">Optimal transport</span></td>
+            <td style="width: 33.2897%; height: 41px;">Postponed</td>
             <td style="width: 33.2897%; height: 41px;"></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/22</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Normalizing Flows</span></td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;">Normalizing flows complete methodology, Neural ODEs -- motivation and complete methodology. Continuity equation, log density ODE along sample paths, maximum likelihood estimation for generative modeling, and differences between ML estimation here and in sampling, where unnormalized density is known</td>
+            <td style="width: 33.2897%; height: 77px;"><a class="inline_disabled" title="Link" href="https://proceedings.mlr.press/v37/rezende15" target="_blank" rel="noopener">Normalizing flows, Rezende and Mohamed 2015</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt; color: #000000; background-color: #ffffff;">01/27</span></td>
@@ -105,7 +105,7 @@
     <tbody>
         <tr>
             <td style="width: 49.9346%;"><span style="font-size: 18pt;">Problem Set 1</span></td>
-            <td style="width: 49.9346%;"><span style="font-size: 18pt;">Due 01/22</span></td>
+            <td style="width: 49.9346%;"><span style="font-size: 18pt;">Due 02/01, 11:59 pm, <a class="instructure_file_link instructure_scribd_file inline_disabled" title="hw1.pdf" href="/courses/69405/files/14674333?wrap=1" target="_blank" rel="noopener">hw1.pdf</a></span></td>
         </tr>
         <tr>
             <td style="width: 49.9346%;"><span style="font-size: 18pt;">Problem Set 2</span></td>
