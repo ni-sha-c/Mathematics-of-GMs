@@ -67,9 +67,17 @@ $\rho_0$ is a standard normal in 2D. We will do this by maximizing the log likel
 So, using the target samples $x_1, \cdots, x_m$, we will follow this procedure to estimate the log likelihood of the samples:
 \begin{itemize}
     \item Time integrate the flow, \eqref{eq:flow}, backward in time, using the final condition, $\varphi^1(x) = x_i, i \in [m].$
-    \item Set $\log \rho_t(x_1) = 0$ and solve the log probability equation \eqref{eq:logprobability} backward in time. The solution at time $t= 0$ is given by $\log\rho_0(x_0),$ where $\varphi^1(x_0) = x_1.$ You can evaluate $\log\rho_0$ anywhere since $\rho_0$ is a Gaussian distribution. 
-    \item Then, recognize from \eqref{eq:}
+    \item Solve the log probability equation \eqref{eq:logprobability} backward in time. The solution at time $t= 0$ is given by $\log\rho_0(x_0),$ where $\varphi^1(x_0) = x_1.$ You can evaluate $\log\rho_0$ anywhere since $\rho_0$ is a Gaussian distribution. 
+    \item Then, recognize from \eqref{eq:logprobability} that $\log\rho_1(x_i) = \log \rho_0(x) - \int_0^1 \mathrm{div}(v(\cdot, t))(\varphi^t(x))\: dt.$
+    \item Set up the maximum likelihood (ML) problem to maximize $\sum_{i=1}^{m} \log \rho_1(x_i).$
 \end{itemize}
+In the above ML problem, we seek the parameters of the NN, $v,$ to maximize $\sum_{i=1}^{m} \log \rho_1(x_i) = \log \rho_0(x) - \int_0^1 \mathrm{div}(v(\cdot, t))(\varphi^t(x))\: dt.$ 
 \end{enumerate}
-
+Use a standard optimizer such as Stochastic Gradient Descent or ADAM and report the following results:
+\begin{enumerate}
+    \item Plot the vector field as contour plots at a few times. What do you observe about the smoothness of your vector field? (5 points)
+    \item Generate sample points (approximately) from $p_\mathrm{data}$ using the trained vector field. Briefly state the procedure to generate. Plot a kernel density estimate using the generated points and compare against $p_\mathrm{data}$ (10 points)
+    \item How good are your results? In other words, give some quantitative metrics for how well the generated samples reflect $p_\mathrm{data}$. 
+    What can you change to make your generative model better? (5 points) 
+\end{enumerate}
 \end{document}
