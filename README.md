@@ -1,5 +1,5 @@
 <p><span style="font-size: 18pt;">Tentative schedule</span></p>
-<p><span style="font-size: 18pt;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="syllabus.pdf" href="/courses/69405/files/14584815?wrap=1" target="_blank" rel="noopener">Syllabus</a></span></p>
+<p><span style="font-size: 18pt;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="syllabus.pdf" href="/courses/69405/files/14743664?wrap=1" target="_blank" rel="noopener">Syllabus</a></span></p>
 <table style="border-collapse: collapse; width: 100%; height: 1242px;" border="1">
     <tbody>
         <tr style="height: 41px;">
@@ -28,38 +28,42 @@
             <td style="width: 33.2897%; height: 41px;"><a class="inline_disabled" title="Link" href="https://proceedings.neurips.cc/paper_files/paper/2010/hash/8a1e808b55fde9455cb3d8857ed88389-Abstract.html" target="_blank" rel="noopener">Narayan and Mitter 2010 on testing the manifold hypothesis</a></td>
         </tr>
         <tr style="height: 41px;">
-            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/20</span></td>
-            <td style="width: 33.2897%; height: 41px;">Postponed</td>
-            <td style="width: 33.2897%; height: 41px;"></td>
+            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">01/20 -&gt; 02/11</span></td>
+            <td style="width: 33.2897%; height: 41px;">Sinkhorn algorithm, discrete optimal transport</td>
+            <td style="width: 33.2897%; height: 41px;"><a class="inline_disabled" title="Link" href="https://proceedings.neurips.cc/paper/2013/hash/af21d0c97db2e27e13572cbf59eb343d-Abstract.html" target="_blank" rel="noopener">Cuturi 2013</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/22</span></td>
             <td style="width: 33.2897%; height: 77px;">Normalizing flows complete methodology, Neural ODEs -- motivation and complete methodology. Continuity equation, log density ODE along sample paths, maximum likelihood estimation for generative modeling, and differences between ML estimation here and in sampling, where unnormalized density is known</td>
-            <td style="width: 33.2897%; height: 77px;"><a class="inline_disabled" title="Link" href="https://proceedings.mlr.press/v37/rezende15" target="_blank" rel="noopener">Normalizing flows, Rezende and Mohamed 2015</a></td>
+            <td style="width: 33.2897%; height: 77px;">
+                <p><a class="inline_disabled" title="Link" href="https://proceedings.mlr.press/v37/rezende15" target="_blank" rel="noopener">Normalizing flows, Rezende and Mohamed 2015</a></p>
+                <p>&nbsp;</p>
+                <p><a class="inline_disabled" href="https://proceedings.neurips.cc/paper/2018/hash/69386f6bb1dfed68692a24c8686939b9-Abstract.html" target="_blank" rel="noopener">Neural ODE: Chen at al 2018</a></p>
+            </td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt; color: #000000; background-color: #ffffff;">01/27</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt; color: #000000; background-color: #ffffff;">Markov Chain Monte Carlo</span></td>
+            <td style="width: 33.2897%; height: 77px;">When do transport maps exist, what is a probability measure/distribution and its difference from probability density</td>
             <td style="width: 33.2897%; height: 77px;"></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/29</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Variational Autoencoders&nbsp;</span></td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;">Discussion of homework problems, Benamou Brenier formulation of optimal transport and its interpretation</td>
+            <td style="width: 33.2897%; height: 77px;"><a class="inline_disabled" title="Link" href="https://www.iap.fr/actualites/laune/2022/TransportOptimal/ark%20_67375_VQC-XB4DR0Z3-2.pdf" target="_blank" rel="noopener">Benamou Brenier 2000</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">02/03</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Stochastic Gradient Langevin Dynamics</span></td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;">Optimal transport formulations: Monge problem, and when its solution exists, Kantorovich problem, definition of Wasserstein distances</td>
+            <td style="width: 33.2897%; height: 77px;"><a class="inline_disabled" href="https://lchizat.github.io/files2020ot/lecture3.pdf" target="_blank" rel="noopener">Chizat Optimal transport lecture notes</a></td>
         </tr>
         <tr style="height: 113px;">
             <td style="width: 33.2897%; height: 113px;"><span style="font-size: 18pt;">02/05</span></td>
-            <td style="width: 33.2897%; height: 113px;"><span style="font-size: 18pt;">Diffusion models, Denoising Diffusion Probabilistic models</span></td>
+            <td style="width: 33.2897%; height: 113px;">Equivalance of dynamical OT (Benamou Brenier), Monge and Kantorovich problems when sample spaces are compact in R^d and cost function is continuous, and the source measure is absolutely continuous</td>
             <td style="width: 33.2897%; height: 113px;"></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">02/10</span></td>
-            <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">Flow matching, stochastic interpolants</span></td>
+            <td style="width: 33.2897%; height: 77px;">Review session for in-class quiz on 02/12</td>
             <td style="width: 33.2897%; height: 77px;"></td>
         </tr>
         <tr style="height: 77px;">
