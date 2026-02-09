@@ -44,7 +44,7 @@
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt; color: #000000; background-color: #ffffff;">01/27</span></td>
             <td style="width: 33.2897%; height: 77px;">When do transport maps exist, what is a probability measure/distribution and its difference from probability density</td>
-            <td style="width: 33.2897%; height: 77px;"></td>
+            <td style="width: 33.2897%; height: 77px;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="ot-1.pdf" href="/courses/69405/files/14776785?wrap=1" target="_blank" rel="noopener">ot-1.pdf</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">01/29</span></td>
@@ -59,7 +59,7 @@
         <tr style="height: 113px;">
             <td style="width: 33.2897%; height: 113px;"><span style="font-size: 18pt;">02/05</span></td>
             <td style="width: 33.2897%; height: 113px;">Equivalance of dynamical OT (Benamou Brenier), Monge and Kantorovich problems when sample spaces are compact in R^d and cost function is continuous, and the source measure is absolutely continuous</td>
-            <td style="width: 33.2897%; height: 113px;"></td>
+            <td style="width: 33.2897%; height: 113px;"><a class="instructure_file_link instructure_scribd_file inline_disabled" title="ot-2.pdf" href="/courses/69405/files/14783675?wrap=1" target="_blank" rel="noopener">ot-2.pdf</a></td>
         </tr>
         <tr style="height: 77px;">
             <td style="width: 33.2897%; height: 77px;"><span style="font-size: 18pt;">02/10</span></td>
