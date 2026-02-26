@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[tagged, highstructure]{accessibility}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{scribe}
+\usepackage{listings}
+\usepackage{natbib,verbatim}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=magenta,
+    pdftitle={Course Syllabus},
+    pdfauthor={Nisha Chandramoorthy},
+    pdflang={en-US}
+}
+
+%\Scribe{Your Name}
+\title{Syllabus-37780}
+\Lecturer{Nisha Chandramoorthy (nishac@uchicago.edu)}
+\LectureNumber{\begin{large} Mathematics of Generative Models \end{large}}
+\LectureDate{}
+\LectureTitle{\begin{large}Homework 2\end{large}}
+
+\lstset{style=mystyle}
+
+\begin{document}
+\MakeScribeTop
+
+In this homework, we will work on flow matching models in 2D. 
+Consider the ODE 
+\begin{equation}
+    \label{eq:flow}
+    \dfrac{dx}{dt} = v(x,t) \quad t \in [0,1]. 
+\end{equation}
+The solution to the ODE above at time $t$ starting with the initial condition $x \in \mathbb{R}^2$ is given by 
+$\varphi^t(x) \in \mathbb{R}^2.$ The function $(t,x) \to \varphi^t(x)$ is also called the flow of the vector field $v.$ The flow, $\varphi^t,$ is deterministic, but we will consider the initial conditions to be random variables taking values in $\mathbb{R}^2$. Let $X_0$ be the random variable denoting the initial condition and having a distribution, $\mu,$ with probability density $\rho_0.$ Let $X_t = \varphi^t(X_0)$, with a probability density, $\rho_t.$ We have already seen that $\rho_t$ solves the continuity equation given by,
+\begin{equation}
+	\label{eq:continuity}
+	\dfrac{\partial \rho_t}{\partial t} = - \mathrm{div}(\rho_t \: v(\cdot,t)).
+\end{equation}
+At time 1, we want the random variable $X_1$ to have the desired distribution $p_\mathrm{data}$, which may not have a density. Flow matching models learn a time dependent vector field $v$ so that the density $\rho_1$ is an approximate density of $p_\mathrm{data}$. But, they must learn $v$ using only independent samples $\{x^{(1)}, \cdots, x^{(m)}\}$ from $p_\mathrm{data}$ and no other information about $p_\mathrm{data}.$ Let $\hat{p}_{\mathrm{data},m} = \mathrm{Unif}\{ x^{(1)}, \cdots, x^{(m)}\}$ be the empirical distribution over the given samples from the target distribution, $p_\mathrm{data}$. Similarly, let $\hat{\mu}_m$ denote the empirical distribution over $m$ independent samples from $\mu.$ For this homework, take $p_\mathrm{data} = \frac{1}{4}\mathcal{N}(\mu_1, \Sigma_1) + \frac{3}{4}\mathcal{N}(\mu_2, \Sigma_2)$ with means $\mu_1 = (-2, 0)^\top,$ $\mu_2 = (2, 0)^\top$ and covariances $\Sigma_1 = \begin{pmatrix} 2 & 0 \\ 0 & 0.5 \end{pmatrix},$ $\Sigma_2 = I_2.$
+
+
+\begin{enumerate}
+	\item Let $Z = (X_0, X_1)$ be a random variable distributed according to $\hat{\mu}_m \times \hat{p}_\mathrm{data}.$  
+    Given $Z = (x_0, x_1),$ suppose we choose an interpolation path $\varphi^t(x_0|Z=(x_0,x_1)) = \alpha_t x_0 + \beta_t x_1.$ 
+    What is the conditional vector field, $u(\cdot, t),$? (1 point)
+    \item What is the solution of the continuity equation for $u(\cdot, t)$? (1 point)
+    \item Let $v_\theta$ be a neural network approximation of $v$. The flow matching loss is 
+    $$ l_\mathrm{FM}(\theta) = \int \|v(t,x) - v_\theta(t,x)\|^2\: \rho_t(x)\: dx\: dt,$$
+    where the integrals are approximated with uniform time discretization and Monte Carlo integration.
+    Rewrite this loss in terms of the conditional vector field and the corresponding solutions to the continuity equation, and explain why it is equivalent to the flow matching loss above.
+    (3 points)
+    \item Choose $\alpha_t, \beta_t,$ and an optimal coupling between $X_0$ and $X_1$ as the distribution of $Z.$ Apply conditional flow matching for the specified target distribution.
+    Attach a plot of the vector field $v_\theta$ at t=0, 0.5 and 1 and interpret your results. You are allowed to use rather than write your own implementation.
+    (5 points)
+    \item Is the vector field you obtain close to the solution of the Benamou-Brenier formulation? Why or why not? (3 points)
+\end{enumerate}
+\end{document}
