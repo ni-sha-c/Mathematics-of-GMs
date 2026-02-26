@@ -119,11 +119,11 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Problem Set 2</span></td>
-            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Due 02/28</span></td>
+            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Due 03/05, 11:59 pm, <span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="hw2.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14910072?wrap=1" target="_blank" rel="noopener" data-id="14910072">hw2.pdf</a><a class="file_download_btn" style="margin-inline-start: 5px; text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14910072/download?download_frd=1" download="" data-id="14910072"> <span class="screenreader-only">Download hw2.pdf</span></a></span></span></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">In-class quiz</span></td>
-            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">02/12 <span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="quiz.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14805550?wrap=1" target="_blank" rel="noopener" data-id="14805550">quiz.pdf</a><a class="file_download_btn" style="margin-inline-start: 5px; text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14805550/download?download_frd=1" download="" data-id="14805550"> <span class="screenreader-only">Download quiz.pdf</span></a></span></span></td>
+            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">02/12 <span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="quiz.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14805550?wrap=1" target="_blank" rel="noopener" data-id="14805550">quiz.pdf</a><a class="file_download_btn" style="text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14805550/download" data-id="14805550"> <span class="screenreader-only">Download quiz.pdf</span></a></span></span></span></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">In-class quiz</span></td>
