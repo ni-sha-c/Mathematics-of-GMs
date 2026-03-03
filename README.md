@@ -94,17 +94,17 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">02/26</span></td>
-            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">Discrete probability distributions, structured distributions</span></td>
+            <td style="width: 33.2897%; height: 41px;"><span style="font-size: 18pt;">Differences in the vector fields, joint distributions and sample paths among the different CFM algorithms.</span></td>
             <td style="width: 33.2897%; height: 41px;"></td>
         </tr>
         <tr>
             <td style="width: 33.2897%;"><span style="font-size: 18pt;">03/03</span></td>
-            <td style="width: 33.2897%;"><span style="font-size: 18pt;">State space models</span></td>
-            <td style="width: 33.2897%;"></td>
+            <td style="width: 33.2897%;"><span style="font-size: 18pt;">Quiz on conditional flow matching and discussion</span></td>
+            <td style="width: 33.2897%;"><span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="quiz2.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14948521?wrap=1" target="_blank" rel="noopener" data-id="14948521">quiz2.pdf</a><a class="file_download_btn" style="text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14948521/download?download_frd=1" data-id="14948521"> <span class="screenreader-only">Download quiz2.pdf</span></a></span></td>
         </tr>
         <tr>
             <td style="width: 33.2897%;"><span style="font-size: 18pt;">03/05</span></td>
-            <td style="width: 33.2897%;"><span style="font-size: 18pt;">Foundation models</span></td>
+            <td style="width: 33.2897%;">Diffusion models</td>
             <td style="width: 33.2897%;"></td>
         </tr>
     </tbody>
@@ -119,7 +119,7 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Problem Set 2</span></td>
-            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Due 03/05, 11:59 pm, <span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="hw2.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14910072?wrap=1" target="_blank" rel="noopener" data-id="14910072">hw2.pdf</a><a class="file_download_btn" style="margin-inline-start: 5px; text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14910072/download?download_frd=1" download="" data-id="14910072"> <span class="screenreader-only">Download hw2.pdf</span></a></span></span></td>
+            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Due 03/05, 11:59 pm, <span class="ally-file-link-holder link_holder"><span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="hw2.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14910072?wrap=1" target="_blank" rel="noopener" data-id="14910072">hw2.pdf</a><a class="file_download_btn" style="text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14910072/download?download_frd=1" data-id="14910072"> <span class="screenreader-only">Download hw2.pdf</span></a></span></span></span></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">In-class quiz</span></td>
@@ -127,7 +127,7 @@
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">In-class quiz</span></td>
-            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">03/03</span></td>
+            <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">03/03 <span class="instructure_file_holder link_holder instructure_file_link_holder"><a class="inline_disabled preview_in_overlay" title="quiz2.pdf" href="https://canvas.uchicago.edu/courses/69405/files/14948521?wrap=1" target="_blank" rel="noopener" data-id="14948521">quiz2.pdf</a><a class="file_download_btn" style="margin-inline-start: 5px; text-decoration: none;" role="button" href="https://canvas.uchicago.edu/courses/69405/files/14948521/download?download_frd=1" download="" data-id="14948521"> <span class="screenreader-only">Download quiz2.pdf</span></a></span></span></td>
         </tr>
         <tr style="height: 41px;">
             <td style="width: 49.9346%; height: 41px;"><span style="font-size: 18pt;">Final project report</span></td>
